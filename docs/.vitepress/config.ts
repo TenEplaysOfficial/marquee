@@ -6,6 +6,7 @@ export default defineConfig({
   // Remove .html from links
   cleanUrls: true,
   lastUpdated: true,
+  base: '/marquee/',
   themeConfig: {
     // nav: [
     //   { text: 'Home', link: '/' },
