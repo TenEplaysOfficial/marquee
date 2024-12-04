@@ -14,6 +14,14 @@ export const Marquee_Test: Story = {
     children: (
       <>
         <img src="https://via.placeholder.com/150" alt="Testing Marquee" />
+        <p>This is test scroll</p>
+        <button className="outline-none p-4 rounded text-white bg-zinc-900/70 font-bold border-2">Yes it is </button>
+        <img src="https://via.placeholder.com/150" alt="Testing Marquee" />
+        <p>This is test scroll</p>
+        <button className="outline-none p-4 rounded text-white bg-zinc-900/70 font-bold border-2">Yes it is </button>
+        <img src="https://via.placeholder.com/150" alt="Testing Marquee" />
+        <p>This is test scroll</p>
+        <button className="outline-none p-4 rounded text-white bg-zinc-900/70 font-bold border-2">Yes it is </button>
       </>
     ),
   },

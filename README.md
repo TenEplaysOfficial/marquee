@@ -1,50 +1,56 @@
-# React + TypeScript + Vite
+# @tenedev/marquee
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+`@tenedev/marquee` is a lightweight and easy-to-use React component library that enables smooth, customizable scrolling text effects in your web applications. Built with `framer-motion`, it offers a seamless animation experience, allowing you to create engaging dynamic content like announcements, news tickers, and promotional banners. With simple integration and flexible customization options, `@tenedev/marquee` is perfect for adding motion and attention-grabbing elements to your site.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### How Does Marquee Work?
+The `Marquee` component scrolls text horizontally in a loop. It can be customized to scroll in either left-to-right or right-to-left directions. Powered by `framer-motion`, it offers seamless, high-performance animations with easy-to-use props to control the behavior.
 
-## Expanding the ESLint configuration
+### Why Use Marquee?
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Engage Users**: Capture attention with dynamic, moving text—ideal for announcements, news tickers, or promotional banners.
+- **Customizable**: Adjust the scroll direction, speed, and content, making it suitable for various use cases.
+- **Smooth Animations**: With `framer-motion`, `@tenedev/marquee` provides smooth, responsive scrolling effects that enhance the user experience.
 
-- Configure the top-level `parserOptions` property like this:
+### Installation
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+To get started with `@tenedev/marquee`, install the package and set up your React app:
+
+```bash
+npm i @tenedev/marquee
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+For detailed installation steps, check out the [Getting Started guide](/getting-started).
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+### Props
+
+| Prop       | Type        | Default | Description                                                                  |
+| ---------- | ----------- | ------- | ---------------------------------------------------------------------------- |
+| `children` | `ReactNode` | —       | The content to be displayed in the marquee (e.g., text, images, components). |
+| `speed`    | `number`    | `50`    | The speed of the scrolling animation.                                        |
+| `gap`      | `number`    | `10`    | The gap (in pixels) between items in the marquee.                            |
+
+
+
+## Example Usage
+
+Here’s how to use the `Marquee` component:
+
+```tsx
+import { Marquee } from "@tenedev/marquee";
+
+<Marquee speed={75} gap={20}>
+  <span>Item 1</span>
+  <span>Item 2</span>
+  <span>Item 3</span>
+</Marquee>
 ```
+
+### Notes
+
+- Ensure `framer-motion` is installed since it is a peer dependency.
+- The `speed` prop determines the animation duration.
+- The `gap` prop adjusts spacing between child elements.
+
