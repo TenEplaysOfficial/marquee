@@ -1,11 +1,7 @@
 {
   "name": "@tenedev/marquee",
   "private": false,
-<<<<<<< HEAD
   "version": "1.0.0",
-=======
-  "version": "0.0.1",
->>>>>>> fbb0537aae94792a29cc0ba76bc9b8b60a92b1ba
   "type": "module",
   "files": [
     "dist",
