@@ -34,17 +34,19 @@ jobs:
         current_version=$(jq -r '.version' package.json)
         previous_version=$(git show HEAD~1:package.json | jq -r '.version' || echo "undefined")
 
+        echo "Current version: $current_version"
+        echo "Previous version: $previous_version"
+
+        # Compare versions and set the environment variable for later steps
         if [ "$previous_version" == "undefined" ]; then
           echo "Previous version not found, assuming no version change"
           echo "version_changed=false" >> $GITHUB_ENV
+        elif [ "$current_version" != "$previous_version" ]; then
+          echo "Version changed"
+          echo "version_changed=true" >> $GITHUB_ENV
         else
-          echo "Current version: $current_version"
-          echo "Previous version: $previous_version"
-          if [ "$current_version" != "$previous_version" ]; then
-            echo "version_changed=true" >> $GITHUB_ENV
-          else
-            echo "version_changed=false" >> $GITHUB_ENV
-          fi
+          echo "No version change detected"
+          echo "version_changed=false" >> $GITHUB_ENV
         fi
 
     - name: Skip if No Version Change
