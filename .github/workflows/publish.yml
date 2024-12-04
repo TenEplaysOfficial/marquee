@@ -3,6 +3,8 @@ name: Publish on Version Change
 on:
   push:
     branches: [main]
+  pull_request:
+    branches: [main]
     paths:
       - "package.json"  # Trigger on changes to package.json
 
