@@ -1,24 +1,48 @@
 {
-  "name": "@tene/marquee",
-  "private": true,
+  "name": "@tenedev/marquee",
+  "private": false,
   "version": "0.0.0",
   "type": "module",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "main": "./dist/@tenedev/marquee.umd.cjs",
+  "module": "./dist/@tenedev/marquee.js",
+  "exports": {
+    ".": {
+      "import": "./dist/@tenedev/marquee-npm.js",
+      "require": "./dist/@tenedev/marquee.umd.cjs"
+    }
+  },
   "scripts": {
     "dev": "vite",
+    "prebuild": "rm -rf dist",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
-    "docs:preview": "vitepress preview docs"
+    "docs:preview": "vitepress preview docs",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "dependencies": {
-    "framer-motion": "^11.12.0",
+    "framer-motion": "^11.13.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
   "devDependencies": {
+    "@storybook/react": "^8.4.6",
+    "@storybook/react-vite": "^8.4.6",
+    "@chromatic-com/storybook": "^3.2.2",
     "@eslint/js": "^9.15.0",
+    "@storybook/addon-essentials": "^8.4.6",
+    "@storybook/addon-interactions": "^8.4.6",
+    "@storybook/addon-onboarding": "^8.4.6",
+    "@storybook/blocks": "^8.4.6",
+    "@storybook/test": "^8.4.6",
+    "@types/node": "^22.10.1",
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
     "@vitejs/plugin-react": "^4.3.4",
@@ -26,8 +50,10 @@
     "eslint": "^9.15.0",
     "eslint-plugin-react-hooks": "^5.0.0",
     "eslint-plugin-react-refresh": "^0.4.14",
+    "eslint-plugin-storybook": "^0.11.1",
     "globals": "^15.12.0",
     "postcss": "^8.4.49",
+    "storybook": "^8.4.6",
     "tailwindcss": "^3.4.15",
     "typescript": "~5.6.2",
     "typescript-eslint": "^8.15.0",
@@ -50,5 +76,13 @@
   "bugs": {
     "url": "https://github.com/TenEplaysOfficial/marquee/issues"
   },
-  "homepage": "https://github.com/TenEplaysOfficial/marquee#readme"
+  "homepage": "https://github.com/TenEplaysOfficial/marquee#readme",
+  "directories": {
+    "lib": "lib"
+  },
+  "eslintConfig": {
+    "extends": [
+      "plugin:storybook/recommended"
+    ]
+  }
 }

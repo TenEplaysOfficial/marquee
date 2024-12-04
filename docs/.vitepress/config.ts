@@ -1,28 +1,35 @@
 import { defineConfig } from 'vitepress'
 
-// https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "Docs",
+  title: "Marquee",
   description: "Documentation",
+  // Remove .html from links
+  cleanUrls: true,
   themeConfig: {
-    // https://vitepress.dev/reference/default-theme-config
-    nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
-    ],
+    // nav: [
+    //   { text: 'Home', link: '/' },
+    // ],
 
     sidebar: [
       {
-        text: 'Examples',
+        text: 'Introduction',
+        collapsed:true, // Makes the dropdown collapsible
         items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
+          { text: 'What is Marquee?', link: '/what-is-marquee' },
+          { text: 'Getting Started', link: '/getting-started' },
         ]
       }
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
-    ]
+      { icon: 'github', link: 'https://github.com/TenEplaysOfficial/marquee' },
+      { icon: 'npm', link: 'https://github.com/TenEplaysOfficial/marquee' }
+    ],
+
+    search: {
+      provider: 'local',
+    },
+
+    outline: 'deep',
   }
 })

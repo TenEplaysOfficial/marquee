@@ -1,25 +1,29 @@
 ---
-# https://vitepress.dev/reference/default-theme-home-page
 layout: home
 
 hero:
-  name: "Docs"
+  name: "Marquee"
   text: "Documentation"
   tagline: My great project tagline
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
+      text: What is Marquee?
+      link: /what-is-marquee
     - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: Quickstart
+      link: /getting-started
+    - theme: alt
+      text: GitHub
+      link: https://github.com/TenEplaysOfficial/marquee
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
----
+  - title: React Component
+    details: Fully customizable React component for easy integration into any project.
+  - title: Framer Motion for Animation
+    details: Smooth and performant animations powered by Framer Motion.
+  - title: Responsive Design
+    details: Automatically adapts to different screen sizes and resolutions.
+  - title: Full Control Over Behavior
+    details: Provides props to control speed, direction, pause, and animation behavior.
 
+---

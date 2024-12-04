@@ -1,0 +1,68 @@
+name: Publish on Version Change
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "package.json"  # Trigger on changes to package.json
+
+jobs:
+  check_and_publish:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+      with:
+        fetch-depth: 0  # Fetch the full history to access previous commits
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: 18
+        cache: 'npm'
+
+    - name: Install Dependencies
+      run: npm install  # Install required dependencies
+
+    - name: Compare Version Field
+      id: version_check
+      run: |
+        # Extract the current and previous version
+        current_version=$(jq -r '.version' package.json)
+        previous_version=$(git show HEAD~1:package.json | jq -r '.version' || echo "undefined")
+
+        if [ "$previous_version" == "undefined" ]; then
+          echo "Previous version not found, assuming no version change"
+          echo "version_changed=false" >> $GITHUB_ENV
+        else
+          echo "Current version: $current_version"
+          echo "Previous version: $previous_version"
+          if [ "$current_version" != "$previous_version" ]; then
+            echo "version_changed=true" >> $GITHUB_ENV
+          else
+            echo "version_changed=false" >> $GITHUB_ENV
+          fi
+        fi
+
+    - name: Skip if No Version Change
+      if: env.version_changed == 'false'
+      run: echo "No version change detected. Skipping publish."
+
+    - name: Build Project (if version changed)
+      if: env.version_changed == 'true'
+      run: |
+        npm run prebuild
+        npm run build
+
+    - name: Debug npm token
+      run: echo "NODE_AUTH_TOKEN=${{ secrets.NPM_TOKEN }}"
+
+    - name: Login to npm
+      run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
+
+    - name: Publish to npm
+      if: env.version_changed == 'true'
+      env:
+        NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+      run: npm publish
