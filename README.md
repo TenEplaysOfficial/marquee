@@ -1,15 +1,6 @@
-![NPM Version](https://img.shields.io/npm/v/%40tene%2Fmarquee)
-![GitHub Repo stars](https://img.shields.io/github/stars/TenEplaysOfficial/marquee)
-![npm bundle size](https://img.shields.io/bundlephobia/min/%40tene%2Fmarquee)
-![NPM Unpacked Size](https://img.shields.io/npm/unpacked-size/%40tene%2Fmarquee)
-![GitHub License](https://img.shields.io/github/license/TenEplaysOfficial/marquee)
-![GitHub Issues or Pull Requests](https://img.shields.io/github/issues/TenEplaysOfficial/marquee)
+<!-- ![GitHub License](https://img.shields.io/github/license/TenEplaysOfficial/marquee) -->
+<!-- ![GitHub Issues or Pull Requests](https://img.shields.io/github/issues/TenEplaysOfficial/marquee) -->
 <!-- ![GitHub Sponsors](https://img.shields.io/github/sponsors/TenEplaysOfficial) -->
-![NPM Downloads](https://img.shields.io/npm/dm/%40tene%2Fmarquee)
-![GitHub Actions Workflow Status (Deploy)](https://img.shields.io/github/actions/workflow/status/TenEplaysOfficial/marquee/deploy)
-![GitHub Actions Workflow Status (Publish)](https://img.shields.io/github/actions/workflow/status/TenEplaysOfficial/marquee/publish)
-
-
 
 # @tenedev/marquee
 
