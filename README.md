@@ -3,11 +3,11 @@
 ![npm bundle size](https://img.shields.io/bundlephobia/min/%40tene%2Fmarquee)
 ![NPM Unpacked Size](https://img.shields.io/npm/unpacked-size/%40tene%2Fmarquee)
 ![GitHub License](https://img.shields.io/github/license/TenEplaysOfficial/marquee)
-![GitHub Issues or Pull Requests](https://img.shields.io/github/issues/TenEplaysOffical/marquee)
-![GitHub Sponsors](https://img.shields.io/github/sponsors/TenEplaysOfficial)
+![GitHub Issues or Pull Requests](https://img.shields.io/github/issues/TenEplaysOfficial/marquee)
+<!-- ![GitHub Sponsors](https://img.shields.io/github/sponsors/TenEplaysOfficial) -->
 ![NPM Downloads](https://img.shields.io/npm/dm/%40tene%2Fmarquee)
-![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/TenEplaysOfficial/marquee/deploy)
-![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/TenEplaysOfficial/marquee/publish)
+![GitHub Actions Workflow Status (Deploy)](https://img.shields.io/github/actions/workflow/status/TenEplaysOfficial/marquee/deploy)
+![GitHub Actions Workflow Status (Publish)](https://img.shields.io/github/actions/workflow/status/TenEplaysOfficial/marquee/publish)
 
 
 
