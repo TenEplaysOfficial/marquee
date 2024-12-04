@@ -1,3 +1,16 @@
+![NPM Version](https://img.shields.io/npm/v/%40tene%2Fmarquee)
+![GitHub Repo stars](https://img.shields.io/github/stars/TenEplaysOfficial/marquee)
+![npm bundle size](https://img.shields.io/bundlephobia/min/%40tene%2Fmarquee)
+![NPM Unpacked Size](https://img.shields.io/npm/unpacked-size/%40tene%2Fmarquee)
+![GitHub License](https://img.shields.io/github/license/TenEplaysOfficial/marquee)
+![GitHub Issues or Pull Requests](https://img.shields.io/github/issues/TenEplaysOffical/marquee)
+![GitHub Sponsors](https://img.shields.io/github/sponsors/TenEplaysOfficial)
+![NPM Downloads](https://img.shields.io/npm/dm/%40tene%2Fmarquee)
+![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/TenEplaysOfficial/marquee/deploy)
+![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/TenEplaysOfficial/marquee/publish)
+
+
+
 # @tenedev/marquee
 
 `@tenedev/marquee` is a lightweight and easy-to-use React component library that enables smooth, customizable scrolling text effects in your web applications. Built with `framer-motion`, it offers a seamless animation experience, allowing you to create engaging dynamic content like announcements, news tickers, and promotional banners. With simple integration and flexible customization options, `@tenedev/marquee` is perfect for adding motion and attention-grabbing elements to your site.
