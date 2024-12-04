@@ -5,6 +5,8 @@ on:
   # using the `master` branch as the default branch.
   push:
     branches: [main]
+  pull_request:
+    branches: [main]
     paths:
       - "docs/**"
 
