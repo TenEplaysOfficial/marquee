@@ -3,8 +3,6 @@ name: Publish on Version Change
 on:
   push:
     branches: [main]
-  pull_request:
-    branches: [main]
     paths:
       - "package.json"  # Trigger on changes to package.json
 
@@ -58,9 +56,6 @@ jobs:
       run: |
         npm run prebuild
         npm run build
-
-    - name: Debug npm token
-      run: echo "NODE_AUTH_TOKEN=${{ secrets.NPM_TOKEN }}"
 
     - name: Login to npm
       run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
