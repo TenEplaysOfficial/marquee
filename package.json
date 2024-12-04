@@ -11,7 +11,7 @@
   "module": "./dist/@tenedev/marquee.js",
   "exports": {
     ".": {
-      "import": "./dist/@tenedev/marquee-npm.js",
+      "import": "./dist/@tenedev/marquee.js",
       "require": "./dist/@tenedev/marquee.umd.cjs"
     }
   },
