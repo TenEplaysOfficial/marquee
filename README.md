@@ -27,7 +27,7 @@ To get started with `@tenedev/marquee`, install the package and set up your Reac
 npm i @tenedev/marquee
 ```
 
-For detailed installation steps, check out the [Getting Started guide](/getting-started).
+For detailed installation steps, check out the [Getting Started guide](https://teneplaysofficial.github.io/marquee/getting-started).
 
 
 ### Props
