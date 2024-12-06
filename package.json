@@ -61,7 +61,7 @@
     "vitepress": "^1.5.0",
     "vue": "^3.5.13"
   },
-  "description": "This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.",
+  "description": "@tenedev/marquee is a React library for creating smooth, customizable scrolling text effects. Perfect for showcasing dynamic content, headlines, or announcements with ease.",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/TenEplaysOfficial/marquee.git"
