@@ -1,5 +1,7 @@
-<!-- ![GitHub License](https://img.shields.io/github/license/TenEplaysOfficial/marquee) -->
-<!-- ![GitHub Issues or Pull Requests](https://img.shields.io/github/issues/TenEplaysOfficial/marquee) -->
+![NPM Version](https://img.shields.io/npm/v/@tenedev/marquee)
+![NPM Downloads](https://img.shields.io/npm/dm/@tenedev/marquee)
+![GitHub License](https://img.shields.io/github/license/TenEplaysOfficial/marquee)
+![GitHub Issues or Pull Requests](https://img.shields.io/github/issues/TenEplaysOfficial/marquee)
 <!-- ![GitHub Sponsors](https://img.shields.io/github/sponsors/TenEplaysOfficial) -->
 
 # @tenedev/marquee
@@ -25,7 +27,7 @@ To get started with `@tenedev/marquee`, install the package and set up your Reac
 npm i @tenedev/marquee
 ```
 
-For detailed installation steps, check out the [Getting Started guide](/getting-started).
+For detailed installation steps, check out the [Getting Started guide](https://teneplaysofficial.github.io/marquee/getting-started).
 
 
 ### Props
