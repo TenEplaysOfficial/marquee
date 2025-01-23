@@ -10,10 +10,10 @@ To install the `@tenedev/marquee` package, run:
 
 ::: code-group
 
-```bash [npm]
+```sh [npm]
 npm i @tenedev/marquee
 ```
-```bash [yarn]
+```sh [yarn]
 yarn add @tenedev/marquee
 ```
 
@@ -23,10 +23,10 @@ This component is built using **React** and requires the `framer-motion` library
 
 ::: code-group
 
-```bash [npm]
+```sh [npm]
 npm i framer-motion
 ```
-```bash [yarn]
+```sh [yarn]
 yarn add framer-motion
 ```
 
