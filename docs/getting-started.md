@@ -13,6 +13,9 @@ To install the `@tenedev/marquee` package, run:
 ```bash [npm]
 npm i @tenedev/marquee
 ```
+```bash [yarn]
+yarn add @tenedev/marquee
+```
 
 :::
 
@@ -22,6 +25,9 @@ This component is built using **React** and requires the `framer-motion` library
 
 ```bash [npm]
 npm i framer-motion
+```
+```bash [yarn]
+yarn add framer-motion
 ```
 
 :::
